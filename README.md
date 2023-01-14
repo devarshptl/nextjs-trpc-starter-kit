@@ -1,4 +1,4 @@
-# Next.js-tRPC-starter-kit
+# Next.js Starter Kit
 
 Built using [Next.js](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/)
 
