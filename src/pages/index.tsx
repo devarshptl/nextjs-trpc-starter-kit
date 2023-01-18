@@ -1,8 +1,8 @@
-import Head from "next/head";
-import { trpc } from "@/utils/trpc";
+import Head from 'next/head';
+import { trpc } from '@/utils/trpc';
 
 export default function Home() {
-  const hello = trpc.hello.useQuery({ text: "Next.js User" });
+  const hello = trpc.hello.useQuery({ text: 'Next.js User' });
   if (!hello.data) {
     return <div>Loading...</div>;
   }

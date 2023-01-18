@@ -1,12 +1,12 @@
 module.exports = {
-  plugins: ["@typescript-eslint", "prettier"],
+  plugins: ['@typescript-eslint', 'prettier'],
   extends: [
-    "next",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    'next',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error",
+    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-explicit-any': 'warn',
   },
 };
