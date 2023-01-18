@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <div className="text-2xl font-bold text-center">
-          {hello.data.greeting}
+          Hello {hello.data.greeting}
         </div>
       </main>
     </>
