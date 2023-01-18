@@ -1,15 +1,16 @@
 import { httpBatchLink } from "@trpc/client";
 import { createTRPCNext } from "@trpc/next";
 import { AppRouter } from "@/server/routers/_app";
+import * as process from "process";
 
-const baseUrl = `http://localhost:${process.env.PORT ?? 3000}`;
+const rootURL = `${process.env.BASE_URL}:${process.env.PORT}/api/trpc`;
 
 export const trpc = createTRPCNext<AppRouter>({
   config({ ctx }) {
     return {
       links: [
         httpBatchLink({
-          url: `${baseUrl}/api/trpc`,
+          url: rootURL,
         }),
       ],
     };
